@@ -1,0 +1,30 @@
+Author: Zhe Zhao (Student ID: 433707)
+
+A short description of the topic and page:
+Rotten tomato website records the information of relevant films and DVDs. Users rate the popularity of relevant films.
+
+A short technical description of the output obtained:
+Through the analysis of the protocol, the following results are obtained. 
+The information related to DVD content is obtained through "https://www.rottentomatoes.com/api/private/v2.0/browse? 
+maxTomato=100&services=amazon%3Bhbo_ go%3Bitunes%3Bnetflix_ iw%3Bvudu%3Bamazon_ prime%3Bfandango_ Now & Certified & so
+rtby = release & type = DVD streaming all & page = 1" obtained by this API interface. Other parameters are fixed. The last
+parameter page represents the number of pages in the current page. 
+Information on different pages can be obtained by modifying the value of the parameter. 
+The call of the API interface returns JSON data, which records the number of data on the current page and the number of all data, 
+The information of each movie is saved in the array corresponding to the results key. 
+The rating classification and score information of the DVD can be obtained from each array item. 
+These two information are saved for the final analysis.
+
+I omit Beautiful Soup scraper:
+Rottentomatoes is dynamic, and scraping can not be done with BS there.
+
+Data analysis - it needs to be demonstrated that the collected data can be used for further analysis:
+Classify all the DVDs obtained according to the rating. The occupation of DVDs with different ratings can be counted. By calculating the draw value of the DVD score under each rating classification, the average score of each rating classification DVD can be counted
+
+Description of scraper mechanics:
+A total of 3 crawlers are written. The content of crawling is the same. It just uses different technologies,
+Soup uses the requests library to obtain relevant information;
+Selenium uses some functions of selenium, an automated testing tool, to crawl information;
+Scratch. Uses the crawler framework of scratch to obtain relevant information.
+
+About efficiency: scrapy is the best, soup is the second, selenium is the slowest.
