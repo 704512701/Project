@@ -19,7 +19,9 @@ I omit Beautiful Soup scraper:
 Rottentomatoes is dynamic, and scraping can not be done with BS there.
 
 Data analysis - it needs to be demonstrated that the collected data can be used for further analysis:
-Classify all the DVDs obtained according to the rating. The occupation of DVDs with different ratings can be counted. By calculating the draw value of the DVD score under each rating classification, the average score of each rating classification DVD can be counted
+Classify all the DVDs obtained according to the rating. The occupation of DVDs with different ratings can be counted. 
+By calculating the draw value of the DVD score under each rating classification,
+the average score of each rating classification DVD can be counted
 
 Description of scraper mechanics:
 A total of 3 crawlers are written. The content of crawling is the same. It just uses different technologies,
