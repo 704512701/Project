@@ -25,6 +25,6 @@ Description of scraper mechanics:
 A total of 3 crawlers are written. The content of crawling is the same. It just uses different technologies,
 Soup uses the requests library to obtain relevant information;
 Selenium uses some functions of selenium, an automated testing tool, to crawl information;
-Scratch. Uses the crawler framework of scratch to obtain relevant information.
+Scrapy uses the crawler framework of scrapy to obtain relevant information.
 
 About efficiency: scrapy is the best, soup is the second, selenium is the slowest.
